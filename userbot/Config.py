@@ -6,7 +6,7 @@ ENV = bool(os.environ.get("ENV", False))
 
 
 class Var(object):
-    APP_ID = int(os.environ.get("APP_ID", 6))
+    APP_ID = int(os.environ.get("APP_ID",25409033))
     # 6 is a placeholder
     LIGHTNING_PRO = os.environ.get("LIGHTNING_PRO", None)
     if not LIGHTNING_PRO:
@@ -14,7 +14,7 @@ class Var(object):
     else:
         LIGHTNING_PRO = LIGHTNING_PRO
 
-    API_HASH = os.environ.get("API_HASH", None)
+    API_HASH = os.environ.get("API_HASH",64d00ccecaf56eb88f29df7075d51848)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/")
@@ -39,7 +39,7 @@ class Var(object):
     )
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
     DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "1311769691").split())
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1311769691").split())
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5035334529").split())
     SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
     # custom vars
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
@@ -58,7 +58,7 @@ class Var(object):
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
+    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER",5759879693:AAHsX8yP_t2TgGvVB8OCpBfqi594kPgvb5k)
     TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
     TAG_LOG = os.environ.get("TAG_LOG", None)
     NO_SONGS = bool(os.environ.get("NO_SONGS", False))
